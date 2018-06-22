@@ -14,7 +14,7 @@
 
 - name: Start etcd service
   systemd:
-    name: etcd2
+    name: etcd-member.service
     state: started
     enabled: yes
     daemon_reload: yes
