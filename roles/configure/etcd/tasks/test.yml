@@ -7,7 +7,7 @@
     delay: 20
 
 - name: Get etcd nodes
-  command: etcdctl ls
+  command: etcdctl ls /
   register: etcd_nodes
   changed_when: false
   until: "'/coreos.com' in etcd_nodes.stdout"
